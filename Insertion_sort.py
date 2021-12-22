@@ -3,10 +3,10 @@ import random
 def insertion_sort(list):
     n = len(list)
 
-    for i in range(n - 1):
+    for i in range(n - 1):  # List is considered sorted at the beginning
         value = list[i + 1]
         # print(f"---------------\t{value}")
-        for j in range(i + 1):
+        for j in range(i + 1):  # Comparing with all the values in the left
             # print("sorting")
             if value < list[i - j]:
                 list[i - j], list[i - j + 1] = list[i - j + 1], list[i - j]
